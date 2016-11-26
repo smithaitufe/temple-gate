@@ -17,12 +17,12 @@
     <script src="system.config.js"></script>
 
     <script>
-        System.import("app").catch(err => { console.error(err); })
+        System.import("app").catch(function(err){ console.error(err); })
     </script>
 
 
 </head>
 <body>
-    <h1>Default Document</h1>
+    <my-app></my-app>
 </body>
 </html>

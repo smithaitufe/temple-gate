@@ -10,12 +10,13 @@ import { Component } from '@angular/core';
                     <a class="navbar-brand" href="/">Temple Gate</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a [routerLink]=['about']>About</a></li>
-                    <li><a [routerLink]=['contact']>Contact</a></li>
+                    <li><a routerLink='/about'>About</a></li>
+                    <li><a routerLink='/contact'>Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <router-outlet></router-outlet>`
+    <router-outlet></router-outlet>
+    `
 })
 export class AppComponent {}

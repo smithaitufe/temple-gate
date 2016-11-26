@@ -1,3 +1,4 @@
+import { ModuleWithProviders, ModulesWithProvider } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -9,7 +10,7 @@ const appRoutes: Routes = [
     {path: 'contact', component: ContactComponent}
 ];
 
-export const appRouting = RouterModule.forRoot(appRoutes);
+export const appRouting:ModulesWithProvider = RouterModule.forRoot(appRoutes);
 
 
 export let appComponents: any = [

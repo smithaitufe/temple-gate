@@ -8,13 +8,13 @@ const appRoutes: Routes = [
     {path: '', component: HomeComponent },
     {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactComponent}
-]
+];
 
 export const appRouting = RouterModule.forRoot(appRoutes);
 
 
 export let appComponents: any = [
-    HomeComponent
+    HomeComponent,
     AboutComponent,
     ContactComponent
 ];

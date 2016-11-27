@@ -5,7 +5,7 @@ import { PublicComponent } from './public/public.component';
 
 
 export const appRoutes: Routes = [    
-    {path: "", component: PublicComponent, redirectTo: "/home", pathMatch: "full"}
+    {path: "", component: PublicComponent}
 ];
 
 export const appRoutingModule: ModuleWithProviders = RouterModule.forRoot(appRoutes);

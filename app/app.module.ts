@@ -6,7 +6,7 @@ import { PublicModule } from './public/public.module';
 
 
 @NgModule({
-    imports: [BrowserModule, PublicModule, appRoutingModule],
+    imports: [BrowserModule, appRoutingModule, PublicModule],
     declarations: [AppComponent, ...appRoutingComponents],
     bootstrap: [AppComponent]
 })

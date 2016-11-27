@@ -1,22 +1,18 @@
-import { ModuleWithProviders, ModulesWithProvider } from '@angular/core';
+import { publicRoutes } from './public/public.routing';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { PublicComponent } from './public/public.component';
 
-const appRoutes: Routes = [
-    {path: '', component: HomeComponent },
-    {path: 'about', component: AboutComponent},
-    {path: 'contact', component: ContactComponent}
+
+export const appRoutes: Routes = [    
+    {path: "", component: PublicComponent, redirectTo: "/home", pathMatch: "full"}
 ];
 
-export const appRouting:ModulesWithProvider = RouterModule.forRoot(appRoutes);
+export const appRoutingModule: ModuleWithProviders = RouterModule.forRoot(appRoutes);
 
-
-export let appComponents: any = [
-    HomeComponent,
-    AboutComponent,
-    ContactComponent
+export const appRoutingComponents: any = [
+    PublicComponent
 ];
+
 
 
